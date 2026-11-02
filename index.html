@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mito ou Verdade? - Câncer de Mama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+
+        <!-- Tela inicial -->
+        <section id="tela-inicio" class="tela ativa">
+            <div class="laco">🎗️</div>
+            <h1>Mito ou Verdade?</h1>
+            <p>Teste seus conhecimentos sobre o câncer de mama e aprenda a se cuidar!</p>
+            <button id="btn-comecar" class="btn btn-principal">Começar</button>
+        </section>
+
+        <!-- Tela da pergunta -->
+        <section id="tela-pergunta" class="tela">
+            <p id="contador" class="contador"></p>
+            <h2 id="pergunta"></h2>
+
+            <div id="botoes" class="botoes">
+                <button class="btn btn-mito" data-resposta="mito">Mito</button>
+                <button class="btn btn-verdade" data-resposta="verdade">Verdade</button>
+            </div>
+
+            <div id="resultado" class="resultado escondido">
+                <p id="resultado-titulo" class="resultado-titulo"></p>
+                <p id="explicacao"></p>
+                <button id="btn-proxima" class="btn btn-principal">Próxima</button>
+            </div>
+        </section>
+
+        <!-- Tela final -->
+        <section id="tela-final" class="tela">
+            <h1>Fim de jogo!</h1>
+            <p id="pontuacao" class="pontuacao"></p>
+
+            <div class="incentivo">
+                <p>💗 <strong>Cuidar de si é um ato de amor!</strong></p>
+                <p>Conheça seu corpo, faça seus exames em dia e compartilhe informação com quem você ama. Diagnóstico precoce salva vidas!</p>
+            </div>
+
+            <div class="apoio">
+                <h3>Onde buscar ajuda</h3>
+                <ul>
+                    <li><strong>UBS (Unidade Básica de Saúde)</strong> — procure a mais próxima de você para consultas e exames pelo SUS</li>
+                    <li><strong>Disque Saúde: 136</strong> — informações sobre saúde (Ministério da Saúde)</li>
+                    <li><strong>Central de Atendimento à Mulher: 180</strong></li>
+                    <li><strong>CVV: 188</strong> — apoio emocional, 24 horas</li>
+                    <li><strong>INCA</strong> — <a href="https://www.gov.br/inca" target="_blank">www.gov.br/inca</a></li>
+                    <li><strong>FEMAMA</strong> — <a href="https://www.femama.org.br" target="_blank">www.femama.org.br</a></li>
+                </ul>
+            </div>
+
+            <button id="btn-reiniciar" class="btn btn-principal">Jogar novamente</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
